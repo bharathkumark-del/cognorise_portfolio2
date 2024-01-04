@@ -1,0 +1,402 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@300;400;500;600;300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+.btn {
+    transition: all 300ms ease;
+}
+
+nav,
+.nav-link {
+    display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
+}
+
+.nav-link {
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+a {
+    color: rgb(3, 3, 75);
+    text-decoration: none;
+    text-decoration-color: white;
+
+}
+
+a:hover {
+    color: blue;
+    text-decoration-color: blue;
+}
+
+.logo {
+    font-size: 2rem;
+    color: rgb(3, 3, 75);
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+#hamburger-nav {
+    display: none;
+}
+
+.hamburger-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.hamburger-icon span {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(3, 3, 75);
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-link {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgb(252, 248, 248);
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+    cursor: pointer;
+}
+
+.menu-link a {
+
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: rgb(50, 3, 94);
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-link li {
+
+    list-style: none;
+}
+
+.menu-link.open {
+    max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 6px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -6px);
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.hamburger-icon span:first-child {
+    opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+    transform: none;
+}
+
+.section-pic-container img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+}
+
+section {
+    padding: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.section-container {
+
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+}
+
+.section-container .img {
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    border: 2px solid rgb(2, 10, 75);
+    border-bottom: none;
+    border-right: none;
+}
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+
+.section-text {
+    align-self: center;
+    text-align: center;
+}
+
+.section-text p {
+    font-weight: 600;
+}
+
+.text-p1 {
+    text-align: center;
+    font-size: 25px;
+    color: rgb(3, 3, 75);
+}
+
+.name {
+    color: rgb(255, 123, 0);
+}
+
+.text-p2 {
+    font-size: 3rem;
+    text-align: center;
+    color: rgb(3, 3, 75);
+
+}
+
+.social-contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.name {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.icon {
+    cursor: pointer;
+    height: 2rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn-CV,
+.btn-contact {
+    border: rgb(240, 146, 6) 0.1rem solid;
+    font-weight: 700;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+    transition: 1s;
+
+}
+
+.btn-CV:hover,
+.btn-contact:hover {
+
+    background-color: rgb(240, 146, 6);
+    color: white;
+
+}
+
+.section-pic-container img {
+    width: 300px;
+    height: 300px;
+    border: none;
+    margin: auto 0;
+    border-radius: 80px;
+}
+
+.section-container-about {
+
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+    gap: 3rem;
+}
+
+#about {
+    position: relative;
+    justify-content: center;
+    gap: 5rem;
+    height: 100vh;
+    
+}
+
+.about-container {
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.about-details-container {
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-container,
+.about-details-container {
+    display: flex;
+}
+
+.arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+.repair{
+    margin-top: 50px;
+}
+
+.details-container {
+    padding: 1.5rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    border: rgb(240, 146, 6) 0.1rem solid;
+
+    text-align: center;
+    width: 300px;
+    height: 150px;
+}
+#arrow{
+    position: absolute;
+    right: -5rem;
+    margin-right: 10%;
+}
+
+#experience{
+    position: relative;
+}
+.experience-sub-title{
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.experience-details-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+article .icon{
+    cursor:default;
+}
+.detaile-containers{
+    border: 3px solid orangered;
+    padding: 30px;
+    width: 400px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.article-container{
+    font-size: 1.5rem;
+    display:grid;
+    justify-content: center;
+    align-items: center;
+
+}
+#recipe{
+    border-radius: 30px;
+    width: 400px;
+height: 350px;
+}
+.button{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#git-link-btn {
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    border-radius: 30px;
+    border: 2px solid red;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 1s;
+}
+#git-link-btn:hover{
+    background-color: rgb(255, 123, 0);
+    
+}
+#contact{
+    margin-top: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.contact-info-upper-container{
+    margin-top: 10rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.contact-info-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    font-size: 1.5em;
+    margin: 3px;
+    color:rgb(3, 3, 75) ;
+}
+#footer{
+    color: rgb(3, 3, 75);
+}
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.nav-links li{
+    padding: 7px;
+    list-style: none;
+}
